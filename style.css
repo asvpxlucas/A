@@ -1,0 +1,133 @@
+body {
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+}
+  
+header img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 150%;
+  max-width: 20%;
+  margin-left: 5px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search-container input[type="search"] {
+  font-size: 15px;
+  color: #6486BF;
+  background-color: #fff;
+  border: 1px solid #6486BF;
+  border-radius: 20px;
+  padding: 8px;
+  margin-right: 5px;
+  width: 70%;
+}
+
+.search-container input[type="search"]:focus {
+  outline: none;
+  border-color: #6486BF;
+  box-shadow: 0 0 5px #6486BF;
+}
+
+.search-container button[type="submit"] {
+  background-color: #f7f7f7;
+  border: 1px solid #6486BF;
+  border-radius: 20px;
+  color: #6486BF;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #ffffff;
+  color: #6486BF;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {  
+  font-family: 'Montserrat', sans-serif;    
+  font-size: 30px;
+  font-weight: 20;
+  margin-bottom: 250px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h1 span {
+  display: inline-block;
+  opacity: 0; 
+  animation-name: fadeIn; 
+  animation-duration: 2s; 
+  animation-delay: calc(0.1s * var(--i)); 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Começar com a letra invisível */
+    transform: translateY(20px); /* Começar a 20px de distância */
+  }
+  to {
+    opacity: 1; /* Tornar a letra visível no final */
+    transform: translateY(0); /* Terminar na posição original */
+  }
+}
+
+.roupas {
+  position: relative; 
+}
+
+.roupas img{
+    width: 300px;
+    height: auto; 
+    position: absolute; 
+    bottom: -300px; 
+    right: 600px; 
+}
+
+.preco{
+    width: 250px;
+    height: auto; 
+    position: absolute; 
+    bottom: -150px; 
+    right: 365px; 
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;  
+    width: 250px;
+    height: auto; 
+    position: absolute; 
+    bottom: -125px; 
+    right: 365px; 
+}
